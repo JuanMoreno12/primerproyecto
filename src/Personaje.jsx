@@ -10,12 +10,13 @@ const Personaje=({nombre,imagenes,id})=>(
                 {nombre}
             </h5>
             <img src= {imagenes} border="1"  width="200" height="200" />
-          
+            <p><Link to={`/jugadores/${id}`}>Detalle</Link></p>
+
         </div>
     </div>
 );
 Personaje.propTypes={
-    nombre:PropTypes.string,
+    nombre:PropTypes.string
 
 }
 

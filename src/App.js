@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Contenedor from './Contenedor';
 import Header from './Header';
 import PersonajeDetalle from './PersonajeDetalle';
-import Menu from './Menu';
+import MainMenu from './MainMenu';
 
 
 const App = () => (
   <Router>
-    <Menu />
+      <MainMenu />
     <Switch>
       <Route path="/" exact component={ Header } />
       <Route path="/jugadores" exact component={ Contenedor } />
