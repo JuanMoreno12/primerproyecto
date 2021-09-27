@@ -61,7 +61,7 @@ const estudiantes = [
         "posicion":""
     },
     {"id" : 9,
-        "nombre": "Keilor Antonio Navas Gamboa",
+        "nombre": "Keylor Antonio Navas Gamboa",
         "edad" : 34,
         "imagenes":"https://1vs1-7f65.kxcdn.com/img/players/players/Keylor-Navas_18500_212-ub-800-mobile.png",
         "dorsal":"",
