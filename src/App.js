@@ -12,8 +12,8 @@ const App = () => (
     <MainMenu />
     <Switch>
       <Route path="/" exact component={ Header } />
-      <Route path="/estudiantes" exact component={ Contenedor } />
-      <Route path="/estudiantes/:id" exact component={ EstudianteDetalle } />
+      <Route path="/Jugadores" exact component={ Contenedor } />
+      <Route path="/Jugador/:id" exact component={ EstudianteDetalle } />
       <Route path="/contacto" exact  component={ Contacto } />
 
       <Route component={() => (

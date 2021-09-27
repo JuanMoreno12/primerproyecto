@@ -94,9 +94,9 @@ const EstudianteDetalle = ({match}) => {
                         </div>
                     </div>
                 ):
-                <h1>El Id no esta registrado.</h1>
+                <h1>El Jugador no esta registrado.</h1>
             }
-            <a href={`/estudiantes`}>Ver todos</a>
+            <a href={`/Jugadores`}>Volver</a>
         </>
     );
 };

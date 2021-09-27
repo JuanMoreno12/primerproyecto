@@ -9,7 +9,7 @@ const Estudiante = ({nombre, imagenes, id}) => (
                 {nombre}
             </h5>
             <img src= {imagenes} border="1"  width="200" height="200" />
-            <p><Link to={`/estudiantes/${id}`}>Detalle</Link></p>
+            <p><Link to={`/Jugador/${id}`}>Detalle</Link></p>
         </div>
     </div>
 );
