@@ -1,15 +1,19 @@
 import React from 'react';
 
-let personaje={nombre:"maria",edad:23};
+let estudiante = {
+    nombre: "maria",
+    edad: 23
+};
 
-const NuevoElemento=(props)=>(
-    <div>
-<h3>personaje</h3>
-<h4>{personaje.nombre}</h4>
-<h3>Tipo de documento:{props.tipodocumento}</h3>
-  <h3>numero de documento:{props.ndocumento}</h3>
-  <p>edad:{personaje.edad}</p>
+var color = "azul";
+
+const NuevoElemento = (props) => (
+    <div className="contendeor">
+        <h3>Estudiante</h3>
+        <h4>{ props.nombre }</h4>
+        <p>Edad: { estudiante.edad } </p>
+        <span>{ color }</span>
     </div>
+)
 
-);
-export default NuevoElemento;
+export default NuevoElemento; 

@@ -1,8 +1,7 @@
-import React from 'react';
-import Personaje from './Personaje';
+import React  from 'react';
+import Estudiante from './Estudiante';
 
-
-const personaje = [
+const estudiantes = [
     {
         "id" : 1,
         "nombre": "Lionel Andrés Messi Cuccittini",
@@ -80,7 +79,7 @@ const personaje = [
 const Contenedor = () => (
     <>
          {
-             personaje.map ( c => <Personaje nombre = { c.nombre }  imagenes={c.imagenes} id = {c.id}/>)
+            estudiantes.map ( c => <Estudiante nombre = { c.nombre } imagenes={c.imagenes} id = {c.id}/>)
          }
     </>
 );

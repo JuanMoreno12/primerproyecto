@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-const personajes = [
+const estudiantes = [
     {
         "id" : 1,
         "nombre": "Lionel Andrés Messi Cuccittini",
@@ -75,31 +75,31 @@ const personajes = [
     }
 ]
 
-const PersonajeDetalle = ({match}) => {
-    const personaje = personajes.filter(c => c.id === parseInt(match.params.id))[0];
+const EstudianteDetalle = ({match}) => {
+    const estudiante = estudiantes.filter(c => c.id === parseInt(match.params.id))[0];
 
-return(
-    <>
-         {
-             personaje ? (
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title">
-                            {personaje.nombre}
-                        </h5>
-                        <p className="card-text">Edad: {personaje.edad}.</p>
-                        <p className="card-text">Imagenes: {personaje.imagenes}.</p>
-                        <p className="card-text">Dorsal: {personaje.dorsal}.</p>
-                        <p className="card-text">Posicion: {personaje.posicion}.</p>
+    return(
+        <>
+            {
+                estudiante ? (
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title">
+                                {estudiante.nombre}
+                            </h5>
+                            <p className="card-text">Edad: {estudiante.edad}.</p>
+                            <img className="card-text" src= {estudiante.imagenes} border="1"  width="200" height="200" />
 
+                            <p className="card-text">Dorsal: {estudiante.dorsal}.</p>
+                            <p className="card-text">Posicion: {estudiante.posicion}.</p>
+                        </div>
                     </div>
-                </div>
-            ):
-            <h1>El Id no esta registrado.</h1>
-         }
-         <a href={`/jugadores`}>Volver</a>
-    </>
-);
-        };
+                ):
+                <h1>El Id no esta registrado.</h1>
+            }
+            <a href={`/estudiantes`}>Ver todos</a>
+        </>
+    );
+};
 
-export default PersonajeDetalle;
+export default EstudianteDetalle;
